@@ -4,10 +4,10 @@ const app = express();
 const cors = require('cors');
 app.use(cors({optionsSuccessStatus: 200}));
 
-app.use(express.static('public'));
+//app.use(express.static('public'));
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + './index.html');
 });
 
 
